@@ -44,6 +44,12 @@ return {
   -- catppuccin
   { "catppuccin/nvim", name = "catppuccin", priority = 1000, lazy = false },
 
+  -- rosepine
+  { "rose-pine/neovim", name = "rose-pine", lazy = false },
+
+  -- tokyonight
+  { "folke/tokyonight.nvim", enabled = false },
+
   -- toggleterm
   { "akinsho/toggleterm.nvim", version = "*", config = true },
 
