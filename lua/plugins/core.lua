@@ -43,7 +43,6 @@ return {
   -- tmux navigator
   {
     "christoomey/vim-tmux-navigator",
-    lazy = true,
     cmd = {
       "TmuxNavigateLeft",
       "TmuxNavigateDown",

@@ -45,13 +45,12 @@ return {
   { "catppuccin/nvim", name = "catppuccin", priority = 1000, lazy = false },
 
   -- toggleterm
-  {
-    "akinsho/toggleterm.nvim",
-    version = "*",
-    opts = {--[[ things you want to change go here]]
-    },
-  },
+  { "akinsho/toggleterm.nvim", version = "*", config = true },
 
-  -- tmux
-  { "aserowy/tmux.nvim" },
+  -- cord.nvim
+  {
+    "vyfor/cord.nvim",
+    build = ":Cord update",
+    -- opts = {}
+  },
 }
