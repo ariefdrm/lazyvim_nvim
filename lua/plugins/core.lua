@@ -3,13 +3,13 @@ return {
   { import = "lazyvim.plugins.extras.lang.typescript" },
 
   -- add gruvbox
-  { "ellisonleao/gruvbox.nvim" },
+  { "ellisonleao/gruvbox.nvim", enabled = false },
 
   -- Configure LazyVim to load gruvbox
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "rose-pine",
+      colorscheme = "catppuccin",
     },
   },
 
