@@ -2,8 +2,13 @@ return {
   -- add typescript
   { import = "lazyvim.plugins.extras.lang.typescript" },
 
-  -- add gruvbox
-  { "ellisonleao/gruvbox.nvim", enabled = false },
+  -- blink-cmp
+  {
+    "Saghen/blink.cmp",
+    config = function()
+      require("plugins.configs.blinkcmp_conf")
+    end,
+  },
 
   -- Configure LazyVim to load gruvbox
   {
