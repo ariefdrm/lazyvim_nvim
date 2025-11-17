@@ -55,8 +55,8 @@ keymap("n", "+", "<C-a>", opts) -- Increment
 keymap("n", "-", "<C-x>", opts) -- Decrement
 
 -- Inc-Rename
-keymap("n", "<leader>rn", '<cmd>lua require("renamer").rename()<cr>', opts)
-keymap("v", "<leader>rn", '<cmd>lua require("renamer").rename()<cr>', opts)
+keymap("n", "<leader>rn", ":IncRename ", {})
+keymap("v", "<leader>rn", ":IncRename ", {})
 
 -- git signs
 keymap("n", "<leader>gs", ":Gitsigns<CR>", opts)

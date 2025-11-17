@@ -49,4 +49,7 @@ return {
       { "<c-\\>", "<cmd><C-U>TmuxNavigatePrevious<cr>" },
     },
   },
+
+  -- renamer
+  -- { "filipdutescu/renamer.nvim", dependencies = { "nvim-lua/plenary.nvim" } },
 }
