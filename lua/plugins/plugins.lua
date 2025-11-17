@@ -24,7 +24,13 @@ return {
   { "folke/tokyonight.nvim", enabled = false },
 
   -- toggleterm
-  { "akinsho/toggleterm.nvim", version = "*", config = true },
+  {
+    "akinsho/toggleterm.nvim",
+    version = "*",
+    config = function()
+      require("plugins.configs.toggleterm_conf")
+    end,
+  },
 
   -- cord.nvim
   { "vyfor/cord.nvim", build = ":Cord update" },
@@ -53,8 +59,25 @@ return {
   -- comment
   {
     "numToStr/Comment.nvim",
-    event = "VeryLazy",
+    event = "BufReadPost",
     opts = require("plugins.configs.comment_conf"),
   },
   { "folke/todo-comments.nvim", enabled = false },
+  -- renamer
+  -- { "filipdutescu/renamer.nvim", dependencies = { "nvim-lua/plenary.nvim" } },
+
+  -- laravel nvim
+  {
+    "adalessa/laravel.nvim",
+    dependencies = {
+      "tpope/vim-dotenv",
+      "MunifTanjim/nui.nvim",
+      "nvim-lua/plenary.nvim",
+      "nvim-neotest/nvim-nio",
+      "ravitemer/mcphub.nvim", -- optional
+    },
+    enabled = true,
+    cmd = { "Laravel" },
+    ft = "php",
+  },
 }
