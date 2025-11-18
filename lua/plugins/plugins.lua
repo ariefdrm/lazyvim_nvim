@@ -50,6 +50,11 @@ return {
     },
   },
 
-  -- renamer
-  -- { "filipdutescu/renamer.nvim", dependencies = { "nvim-lua/plenary.nvim" } },
+  -- comment
+  {
+    "numToStr/Comment.nvim",
+    event = "VeryLazy",
+    opts = require("plugins.configs.comment_conf"),
+  },
+  { "folke/todo-comments.nvim", enabled = false },
 }

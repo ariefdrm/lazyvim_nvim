@@ -1,6 +1,6 @@
 return {
   window = {
-    position = "left",
+    position = "right",
   },
   -- fill any relevant options here
   event_handlers = {

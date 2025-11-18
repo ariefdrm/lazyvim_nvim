@@ -5,6 +5,7 @@
 vim.g.lazyvim_check_order = false
 
 -- Basic options
+vim.o.ttimeoutlen = 750
 vim.opt.number = true -- Show line numbers
 vim.opt.relativenumber = true -- Show relative line numbers
 vim.opt.hlsearch = true -- Highlight search results
