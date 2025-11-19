@@ -18,6 +18,19 @@ return {
     },
   },
 
+  -- neotree file explorer
+  {
+    "nvim-neo-tree/neo-tree.nvim",
+    branch = "v3.x",
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+      "MunifTanjim/nui.nvim",
+      "nvim-tree/nvim-web-devicons", -- optional, but recommended
+    },
+    lazy = false, -- neo-tree will lazily load itself
+    opts = require("plugins.configs.neotree"),
+  },
+
   -- change trouble config
   {
     "folke/trouble.nvim",
@@ -44,4 +57,7 @@ return {
 
   -- which key
   { "folke/which-key.nvim", enabled = false },
+
+  -- todo-comments
+  { "folke/todo-comments.nvim", enabled = false }, -- disable
 }

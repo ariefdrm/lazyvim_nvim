@@ -1,16 +1,4 @@
 return {
-  {
-    "nvim-neo-tree/neo-tree.nvim",
-    branch = "v3.x",
-    dependencies = {
-      "nvim-lua/plenary.nvim",
-      "MunifTanjim/nui.nvim",
-      "nvim-tree/nvim-web-devicons", -- optional, but recommended
-    },
-    lazy = false, -- neo-tree will lazily load itself
-    opts = require("plugins.configs.neotree"),
-  },
-
   -- telescope
   { "nvim-telescope/telescope.nvim", dependencies = { "nvim-lua/plenary.nvim" } },
 
@@ -56,5 +44,4 @@ return {
     event = "VeryLazy",
     opts = require("plugins.configs.comment_conf"),
   },
-  { "folke/todo-comments.nvim", enabled = false },
 }

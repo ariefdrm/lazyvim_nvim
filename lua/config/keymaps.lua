@@ -24,7 +24,6 @@ keymap("n", "<C-S>", ":wa<CR>", opts) -- save all open buffers / all open files
 keymap("n", "<leader>a", "ggVG", opts) -- Select all content in the file
 
 -- Additional useful keymaps
-keymap("n", "<leader>q", ":q<CR>", opts) -- Quit
 keymap("n", "<leader>x", ":xa<CR>", opts) -- Save and quit
 keymap("n", "<leader>sc", ":nohlsearch<cr>", opts) -- clear highlight search
 keymap("i", "kj", "<Esc>", opts) -- exit insert mode
