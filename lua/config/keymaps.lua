@@ -68,7 +68,7 @@ keymap("n", "<leader>lg", ":LazyGit<CR>", opts)
 keymap("t", "<Esc>", "<C-\\><C-n><cmd>q<CR>", opts) -- exit lazygit with esc
 
 -- toggleterm
-keymap("n", "<C-t>", "<cmd>ToggleTerm direction=float<cr>", { desc = "Toggle terminal" })
+keymap("n", "<leader>tt", "<cmd>ToggleTerm direction=float<cr>", { desc = "Toggle Terminal" })
 
 -- neotree
 keymap("n", "<leader>e", "<cmd>Neotree toggle<cr>", opts)
