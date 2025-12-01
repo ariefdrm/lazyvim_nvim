@@ -39,10 +39,13 @@
     "branch": "master",
     "commit": "a7c61e7dd94170f9dd84f5b5546b874f98c7d5bd"
   },
+<<<<<<< HEAD
   "cord.nvim": {
     "branch": "master",
     "commit": "7483e9ce335d22a9e52f83804134d621094b5fe7"
   },
+=======
+>>>>>>> 56ec539 (feat: update keymap for showing float terminal)
   "friendly-snippets": {
     "branch": "main",
     "commit": "572f5660cf05f8cd8834e096d7b4c921ba18e175"
@@ -67,10 +70,13 @@
     "branch": "main",
     "commit": "5231c62aa83c2f8dc8e7ba957aa77098cda1257d"
   },
+<<<<<<< HEAD
   "lspkind.nvim": {
     "branch": "master",
     "commit": "3ddd1b4edefa425fda5a9f95a4f25578727c0bb3"
   },
+=======
+>>>>>>> 56ec539 (feat: update keymap for showing float terminal)
   "lualine.nvim": {
     "branch": "master",
     "commit": "47f91c416daef12db467145e16bed5bbfe00add8"
@@ -155,6 +161,7 @@
     "branch": "main",
     "commit": "fe7cfe9800a182274d0f868a74b7263b8c0c020b"
   },
+<<<<<<< HEAD
   "telescope.nvim": {
     "branch": "master",
     "commit": "e709d31454ee6e6157f0537f861f797bd44c0bad"
@@ -167,6 +174,8 @@
     "branch": "main",
     "commit": "50ea089fc548917cc3cc16b46a8211833b9e3c7c"
   },
+=======
+>>>>>>> 56ec539 (feat: update keymap for showing float terminal)
   "tokyonight.nvim": {
     "branch": "main",
     "commit": "5da1b76e64daf4c5d410f06bcb6b9cb640da7dfd"
@@ -187,8 +196,18 @@
     "branch": "master",
     "commit": "c45243dc1f32ac6bcf6068e5300f3b2b237e576a"
   },
+<<<<<<< HEAD
   "yanky.nvim": {
     "branch": "main",
     "commit": "04fc42b94305d94948c9c197f679336668af3292"
+=======
+  "which-key.nvim": {
+    "branch": "main",
+    "commit": "3aab2147e74890957785941f0c1ad87d0a44c15a"
+  },
+  "yanky.nvim": {
+    "branch": "main",
+    "commit": "04775cc6e10ef038c397c407bc17f00a2f52b378"
+>>>>>>> 56ec539 (feat: update keymap for showing float terminal)
   }
 }
