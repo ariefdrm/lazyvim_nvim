@@ -9,6 +9,7 @@
 
 -- refresh neovim whenever files change
 local autocmd_group = vim.api.nvim_create_augroup("MyAutoCmds", { clear = true })
+local filetype_related = vim.api.nvim_create_augroup("BladeFiltypeRelated", { clear = true })
 
 vim.api.nvim_create_autocmd({ "FocusGained", "BufEnter" }, {
   group = autocmd_group,
@@ -25,4 +26,18 @@ vim.api.nvim_create_autocmd("VimResized", {
   pattern = "*",
   command = "tabdo wincmd =",
   desc = "Equalize window sizes",
+})
+
+vim.filetype.add({
+  pattern = {
+    [".*%.blade%.php"] = "blade",
+  },
+})
+
+vim.api.nvim_create_autocmd({ "BufNewFile", "BufRead" }, {
+  pattern = "*.blade.php",
+  group = filetype_related,
+  callback = function()
+    vim.opt.filetype = "blade"
+  end,
 })

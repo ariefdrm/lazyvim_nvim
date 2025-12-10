@@ -76,7 +76,7 @@ return {
       "nvim-neotest/nvim-nio",
       "ravitemer/mcphub.nvim", -- optional
     },
-    enabled = true,
+    enabled = false,
     cmd = { "Laravel" },
     ft = "php",
   },

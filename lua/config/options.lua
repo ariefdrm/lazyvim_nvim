@@ -5,7 +5,7 @@
 vim.g.lazyvim_check_order = false
 
 -- Basic options
-vim.o.ttimeoutlen = 750
+vim.o.ttimeoutlen = 50
 vim.opt.number = true -- Show line numbers
 vim.opt.relativenumber = true -- Show relative line numbers
 vim.opt.hlsearch = true -- Highlight search results
@@ -62,3 +62,6 @@ vim.opt.fileencoding = "utf-8"
 vim.opt.showmode = false
 
 vim.g.lazyvim_php_lsp = "intelephense"
+
+-- enable lsp server individually
+vim.lsp.enable("intelephense")

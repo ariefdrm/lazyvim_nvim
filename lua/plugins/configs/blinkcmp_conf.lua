@@ -5,6 +5,12 @@ return {
         auto_show = true,
         auto_show_delay_ms = 500,
       },
+
+      trigger = {
+        show_in_snippet = true,
+        show_on_keyword = true,
+        show_on_trigger_character = true,
+      },
     },
 
     keymap = {
@@ -21,5 +27,11 @@ return {
         ["<S-Tab>"] = { "show_and_insert_or_accept_single", "select_prev" },
       },
     },
+
+    snippets = {
+      preset = "default",
+    },
   }),
+
+  -- require("luasnip.loaders.from_vscode").lazy_load(),
 }
