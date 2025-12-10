@@ -65,10 +65,13 @@ keymap("n", "<leader>gt", ":Gitsigns toggle_current_line_blame<CR>", opts)
 
 -- lazy git
 keymap("n", "<leader>lg", ":LazyGit<CR>", opts)
-keymap("t", "<Esc>", "<C-\\><C-n><cmd>q<CR>", opts) -- exit lazygit with esc
+-- keymap("t", "<Esc>", "<C-\\><C-n><cmd>q<CR>", opts) -- exit lazygit with esc
 
 -- toggleterm
 keymap("n", "<leader>tt", "<cmd>ToggleTerm direction=float<cr>", { desc = "Toggle Terminal" })
 
 -- neotree
 keymap("n", "<leader>e", "<cmd>Neotree toggle<cr>", opts)
+
+keymap("n", "<A-k>", "<cmd>move -2<CR>", { desc = "Move line up" })
+keymap("n", "<A-j>", "<cmd>move +1<CR>", { desc = "Move line down" })

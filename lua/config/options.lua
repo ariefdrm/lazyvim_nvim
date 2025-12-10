@@ -62,3 +62,6 @@ vim.opt.fileencoding = "utf-8"
 vim.opt.showmode = false
 
 vim.g.lazyvim_php_lsp = "intelephense"
+
+-- enable lsp server individually
+vim.lsp.enable("intelephense")

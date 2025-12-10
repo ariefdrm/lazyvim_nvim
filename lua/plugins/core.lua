@@ -69,6 +69,8 @@ return {
     "mason-org/mason.nvim",
     opts = {
       ensure_installed = {
+        "html-lsp",
+        "css-lsp",
         "stylua",
         "prettier",
         "shellcheck",
@@ -83,4 +85,17 @@ return {
 
   -- todo-comments
   { "folke/todo-comments.nvim", enabled = true }, -- disable
+  -- formatter
+  {
+    "stevearc/conform.nvim",
+    dependencies = {
+      "mason-org/mason.nvim",
+      "mason-org/mason-lspconfig.nvim",
+    },
+    opts = {
+      formatters_by_ft = {
+        blade = { "blade-formatter" },
+      },
+    },
+  },
 }

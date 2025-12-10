@@ -34,6 +34,7 @@ return {
   {
     "christoomey/vim-tmux-navigator",
     event = "LazyFile",
+    enabled = false,
     cmd = {
       "TmuxNavigateLeft",
       "TmuxNavigateDown",
@@ -62,6 +63,7 @@ return {
   {
     "kdheepak/lazygit.nvim",
     lazy = true,
+    enabled = false,
     cmd = {
       "LazyGit",
       "LazyGitConfig",

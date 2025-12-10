@@ -43,6 +43,12 @@ return {
         auto_show = true,
         auto_show_delay_ms = 500,
       },
+
+      trigger = {
+        show_in_snippet = true,
+        show_on_keyword = true,
+        show_on_trigger_character = true,
+      },
     },
 
     keymap = {
@@ -65,7 +71,11 @@ return {
         },
       },
     },
+
+    snippets = {
+      preset = "default",
+    },
   }),
 
-  require("luasnip.loaders.from_vscode").load(),
+  require("luasnip.loaders.from_vscode").lazy_load(),
 }
