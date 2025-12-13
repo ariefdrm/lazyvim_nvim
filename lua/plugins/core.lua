@@ -10,11 +10,11 @@ return {
     end,
   },
 
-  -- Configure LazyVim to load gruvbox
+  -- Configure Lazyvim to load
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "catppuccin", -- catppuccin
+      colorscheme = "rose-pine", -- set colorscheme
     },
   },
 
@@ -32,6 +32,7 @@ return {
   {
     "mason-org/mason.nvim",
     opts = {
+      -- ensure installed lsp server and other tools that related like formatter (e.g prettier) for these language
       ensure_installed = {
         "html-lsp",
         "css-lsp",
