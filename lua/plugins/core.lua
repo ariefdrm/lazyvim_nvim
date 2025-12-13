@@ -68,6 +68,7 @@ return {
   {
     "mason-org/mason.nvim",
     opts = {
+      -- ensure installed lsp server and other tools that related like formatter (e.g prettier) for these language
       ensure_installed = {
         "html-lsp",
         "css-lsp",

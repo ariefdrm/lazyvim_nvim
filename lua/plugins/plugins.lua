@@ -17,6 +17,9 @@ return {
   -- nightfox
   { "EdenEast/nightfox.nvim", priority = 1000, enabled = true }, -- lazy
 
+  -- nord theme
+  { "shaunsingh/nord.nvim", lazy = false, enabled = false },
+
   -- toggleterm
   {
     "akinsho/toggleterm.nvim",
