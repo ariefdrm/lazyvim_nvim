@@ -5,6 +5,9 @@ return {
   -- blink-cmp
   {
     "Saghen/blink.cmp",
+    dependencies = {
+      "onsails/lspkind.nvim",
+    },
     config = function()
       require("plugins.configs.blinkcmp_conf")
     end,
@@ -46,6 +49,8 @@ return {
     "mason-org/mason.nvim",
     opts = {
       ensure_installed = {
+        "html-lsp",
+        "css-lsp",
         "stylua",
         "prettier",
         "shellcheck",

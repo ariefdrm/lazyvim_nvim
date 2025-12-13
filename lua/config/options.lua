@@ -61,4 +61,5 @@ vim.opt.fileencoding = "utf-8"
 -- Disable mode display since statusline plugins can show it
 vim.opt.showmode = false
 
+-- use specific lsp for some language
 vim.g.lazyvim_php_lsp = "intelephense"
