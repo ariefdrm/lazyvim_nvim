@@ -11,12 +11,7 @@ return {
   },
 
   -- Configure LazyVim to load gruvbox
-  {
-    "LazyVim/LazyVim",
-    opts = {
-      colorscheme = "catppuccin",
-    },
-  },
+  { "LazyVim/LazyVim", opts = { colorscheme = "gruvbox" } },
 
   -- neotree file explorer
   {

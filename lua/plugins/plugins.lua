@@ -2,8 +2,11 @@ return {
   -- telescope
   { "nvim-telescope/telescope.nvim", dependencies = { "nvim-lua/plenary.nvim" } },
 
+  -- gruvbox
+  { "ellisonleao/gruvbox.nvim", priority = 1000, config = true, opts = ... },
+
   -- catppuccin
-  { "catppuccin/nvim", name = "catppuccin", priority = 1000, lazy = false },
+  { "catppuccin/nvim", name = "catppuccin", priority = 1000, lazy = false, enabled = false },
 
   -- rosepine
   { "rose-pine/neovim", name = "rose-pine", lazy = false, enabled = false },
