@@ -3,7 +3,7 @@ return {
   { "nvim-telescope/telescope.nvim", dependencies = { "nvim-lua/plenary.nvim" } },
 
   -- gruvbox
-  { "ellisonleao/gruvbox.nvim", priority = 1000, config = true, opts = ... },
+  { "ellisonleao/gruvbox.nvim", priority = 1000, enabled = false },
 
   -- catppuccin
   { "catppuccin/nvim", name = "catppuccin", priority = 1000, lazy = false, enabled = false },
@@ -12,7 +12,7 @@ return {
   { "rose-pine/neovim", name = "rose-pine", lazy = false, enabled = false },
 
   -- tokyonight
-  { "folke/tokyonight.nvim", enabled = false },
+  { "folke/tokyonight.nvim", enabled = true },
 
   -- toggleterm
   {
@@ -53,7 +53,4 @@ return {
     event = "BufReadPost",
     opts = require("plugins.configs.comment_conf"),
   },
-
-  -- todo-comments
-  { "folke/todo-comments.nvim", enabled = true },
 }

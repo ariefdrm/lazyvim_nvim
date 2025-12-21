@@ -5,13 +5,16 @@ return {
   -- blink-cmp
   {
     "Saghen/blink.cmp",
+    dependencies = {
+      "onsails/lspkind.nvim",
+    },
     config = function()
       require("plugins.configs.blinkcmp_conf")
     end,
   },
 
   -- Configure LazyVim to load gruvbox
-  { "LazyVim/LazyVim", opts = { colorscheme = "gruvbox" } },
+  { "LazyVim/LazyVim", opts = { colorscheme = "tokyonight" } },
 
   -- neotree file explorer
   {
@@ -54,5 +57,5 @@ return {
   { "folke/which-key.nvim", enabled = false },
 
   -- todo-comments
-  { "folke/todo-comments.nvim", enabled = false }, -- disable
+  { "folke/todo-comments.nvim", enabled = true }, -- disable
 }
