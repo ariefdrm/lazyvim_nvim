@@ -26,7 +26,7 @@ return {
   -- tmux navigator
   {
     "christoomey/vim-tmux-navigator",
-    event = "BufReadPost",
+    event = "LazyFile",
     cmd = {
       "TmuxNavigateLeft",
       "TmuxNavigateDown",
@@ -50,7 +50,7 @@ return {
     event = "BufReadPost",
     opts = require("plugins.configs.comment_conf"),
   },
-  { "folke/todo-comments.nvim", enabled = false },
-  -- renamer
-  -- { "filipdutescu/renamer.nvim", dependencies = { "nvim-lua/plenary.nvim" } },
+
+  -- todo-comments
+  { "folke/todo-comments.nvim", enabled = true },
 }
