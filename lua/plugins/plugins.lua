@@ -14,6 +14,9 @@ return {
   -- tokyonight
   { "folke/tokyonight.nvim", enabled = true },
 
+  -- nightfox
+  { "EdenEast/nightfox.nvim", enabled = false }, -- lazy
+
   -- toggleterm
   {
     "akinsho/toggleterm.nvim",

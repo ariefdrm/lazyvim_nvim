@@ -58,6 +58,12 @@ return {
         ["<Tab>"] = { "show_and_insert_or_accept_single", "select_next" },
         ["<S-Tab>"] = { "show_and_insert_or_accept_single", "select_prev" },
       },
+
+      completion = {
+        ghost_text = {
+          enabled = true,
+        },
+      },
     },
   }),
 
