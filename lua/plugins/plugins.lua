@@ -12,7 +12,7 @@ return {
   { "rose-pine/neovim", name = "rose-pine", lazy = false, enabled = false },
 
   -- tokyonight
-  { "folke/tokyonight.nvim", enabled = true },
+  { "folke/tokyonight.nvim", enabled = true, opts = { transparent = true } },
 
   -- nightfox
   { "EdenEast/nightfox.nvim", enabled = false }, -- lazy
@@ -55,5 +55,16 @@ return {
     "numToStr/Comment.nvim",
     event = "BufReadPost",
     opts = require("plugins.configs.comment_conf"),
+  },
+
+  -- transparent nvim
+  {
+    "xiyaowong/transparent.nvim",
+    event = "VimEnter",
+    config = function()
+      require("transparent").clear_prefix("NeoTree")
+      require("transparent").clear_prefix("Lualine")
+      require("transparent").clear_prefix("BufferLine")
+    end,
   },
 }
