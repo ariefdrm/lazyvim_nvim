@@ -41,6 +41,12 @@ keymap("n", "<leader>bl", ":BufferLineCloseLeft<CR>", opts) -- Close left buffer
 
 -- Telescope
 keymap("n", "<leader>ff", ":Telescope find_files<CR>", opts) -- Find files
+keymap(
+  "n",
+  "<leader><space>",
+  ":Telescope find_files<CR>",
+  { silent = true, noremap = true, desc = "activate telescope using double space" }
+) -- Find files
 keymap("n", "<leader>fg", ":Telescope live_grep<CR>", opts) -- Live grep
 keymap("n", "<leader>fb", ":Telescope buffers<CR>", opts) -- Buffers
 keymap("n", "<leader>fh", ":Telescope help_tags<CR>", opts) -- Help
@@ -73,5 +79,6 @@ keymap("n", "<leader>tt", "<cmd>ToggleTerm direction=float<cr>", { desc = "Toggl
 -- neotree
 keymap("n", "<leader>e", "<cmd>Neotree toggle<cr>", opts)
 
+-- Move line using alt
 keymap("n", "<A-k>", "<cmd>move -2<CR>", { desc = "Move line up" })
 keymap("n", "<A-j>", "<cmd>move +1<CR>", { desc = "Move line down" })

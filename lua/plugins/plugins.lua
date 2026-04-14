@@ -15,7 +15,10 @@ return {
   { "folke/tokyonight.nvim", priority = 1000, enabled = false, opts = { transparent = true } },
 
   -- nightfox
-  { "EdenEast/nightfox.nvim", priority = 1000, enabled = true }, -- lazy
+  { "EdenEast/nightfox.nvim", priority = 1000, enabled = false }, -- lazy
+
+  -- nord theme
+  { "shaunsingh/nord.nvim", lazy = false, enabled = false },
 
   -- nord theme
   { "shaunsingh/nord.nvim", lazy = false, enabled = false },
