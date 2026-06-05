@@ -6,7 +6,9 @@ return {
   {
     "Saghen/blink.cmp",
     dependencies = {
+      "saghen/blink.lib",
       "onsails/lspkind.nvim",
+      "L3MON4D3/LuaSnip",
     },
     config = function()
       require("plugins.configs.blinkcmp_conf")
@@ -82,7 +84,7 @@ return {
   },
 
   -- Configure LazyVim to load gruvbox
-  { "LazyVim/LazyVim", opts = { colorscheme = "catppuccin" } },
+  { "LazyVim/LazyVim", opts = { colorscheme = "tokyonight" } },
 
   -- neotree file explorer
   {

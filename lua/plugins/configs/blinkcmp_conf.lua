@@ -73,7 +73,7 @@ return {
     },
 
     snippets = {
-      preset = "default",
+      preset = "luasnip",
     },
   }),
 

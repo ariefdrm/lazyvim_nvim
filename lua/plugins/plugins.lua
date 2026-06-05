@@ -6,13 +6,13 @@ return {
   { "ellisonleao/gruvbox.nvim", priority = 1000, enabled = false },
 
   -- catppuccin
-  { "catppuccin/nvim", name = "catppuccin", priority = 1000, lazy = false, enabled = true },
+  { "catppuccin/nvim", name = "catppuccin", priority = 1000, lazy = false, enabled = false },
 
   -- rosepine
   { "rose-pine/neovim", name = "rose-pine", priority = 1000, lazy = false, enabled = false },
 
   -- tokyonight
-  { "folke/tokyonight.nvim", priority = 1000, enabled = false, opts = { transparent = true } },
+  { "folke/tokyonight.nvim", priority = 1000, enabled = true, opts = { transparent = true } },
 
   -- nightfox
   { "EdenEast/nightfox.nvim", priority = 1000, enabled = false }, -- lazy
@@ -62,7 +62,18 @@ return {
   {
     "numToStr/Comment.nvim",
     event = "BufReadPost",
-    opts = require("plugins.configs.comment_conf"),
+    config = function()
+      require("plugins.configs.comment_conf")
+    end,
+  },
+
+  {
+    "JoosepAlviste/nvim-ts-context-commentstring",
+    config = function()
+      require("ts_context_commentstring").setup({
+        enable_autocmd = false,
+      })
+    end,
   },
 
   -- lazygit
@@ -91,7 +102,7 @@ return {
   -- transparent nvim
   {
     "xiyaowong/transparent.nvim",
-    enabled = false,
+    enabled = true,
     event = "VimEnter",
     config = function()
       require("transparent").clear_prefix("NeoTree")
