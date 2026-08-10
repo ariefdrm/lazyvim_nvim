@@ -4,14 +4,24 @@ return {
 
   -- blink-cmp
   {
-    "Saghen/blink.cmp",
+    "saghen/blink.cmp",
     dependencies = {
       "saghen/blink.lib",
-      "onsails/lspkind.nvim",
       "L3MON4D3/LuaSnip",
+      "onsails/lspkind.nvim",
+      "rafamadriz/friendly-snippets",
     },
+    build = function()
+      -- build the fuzzy matcher, optionally add a timeout to `pwait(timeout_ms)`
+      -- you can use `gb` in `:Lazy` to rebuild the plugin as needed
+      require("blink.cmp").build():pwait()
+    end,
+
+    ---@module 'blink.cmp'
+    ---@type blink.cmp.Config
+    opts = require("plugins.configs.blinkcmp_conf"),
     config = function()
-      require("plugins.configs.blinkcmp_conf")
+      require("luasnip.loaders.from_vscode").lazy_load()
     end,
   },
 
@@ -96,7 +106,9 @@ return {
       "nvim-tree/nvim-web-devicons", -- optional, but recommended
     },
     lazy = false, -- neo-tree will lazily load itself
-    opts = require("plugins.configs.neotree"),
+    config = function()
+      require("plugins.configs.neotree")
+    end,
   },
 
   -- change trouble config

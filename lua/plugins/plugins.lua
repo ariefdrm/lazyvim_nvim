@@ -12,7 +12,7 @@ return {
   { "rose-pine/neovim", name = "rose-pine", priority = 1000, lazy = false, enabled = false },
 
   -- tokyonight
-  { "folke/tokyonight.nvim", priority = 1000, enabled = true, opts = { transparent = true } },
+  { "folke/tokyonight.nvim", priority = 1000, enabled = true, opts = { transparent = false } },
 
   -- nightfox
   { "EdenEast/nightfox.nvim", priority = 1000, enabled = false }, -- lazy

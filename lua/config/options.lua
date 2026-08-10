@@ -4,6 +4,12 @@
 
 vim.g.lazyvim_check_order = false
 
+-- Use Telescope as LazyVim's picker backend (enables the editor.telescope extra
+-- and disables editor.snacks_picker). This makes all default picker keymaps
+-- (<leader>ff, <leader><space>, <leader>fg, ...) route to Telescope instead of
+-- Snacks.picker, so they no longer override the custom Telescope maps below.
+vim.g.lazyvim_picker = "telescope"
+
 -- Basic options
 vim.o.ttimeoutlen = 50
 vim.opt.number = true -- Show line numbers
