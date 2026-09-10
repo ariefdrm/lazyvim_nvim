@@ -150,10 +150,6 @@ return {
       "mason-org/mason.nvim",
       "mason-org/mason-lspconfig.nvim",
     },
-    opts = {
-      formatters_by_ft = {
-        blade = { "blade-formatter" },
-      },
-    },
+    opts = require("plugins.configs.conform"),
   },
 }
