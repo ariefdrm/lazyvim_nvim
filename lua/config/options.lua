@@ -4,6 +4,20 @@
 
 vim.g.lazyvim_check_order = false
 
+-- to use clip.exe as clipboard engine for wsl windows
+vim.g.clipboard = {
+  name = "WslClipboard",
+  copy = {
+    ["+"] = "clip.exe", -- Copy to system clipboard
+    ["*"] = "clip.exe", -- Copy to selection clipboard (same for WSL)
+  },
+  paste = {
+    ["+"] = 'pwsh.exe -c [Console]::Out.Write($(Get-Clipboard -Raw).tostring().replace("`r", ""))',
+    ["*"] = 'pwsh.exe -c [Console]::Out.Write($(Get-Clipboard -Raw).tostring().replace("`r", ""))',
+  },
+  cache_enabled = 0,
+}
+
 -- Use Telescope as LazyVim's picker backend (enables the editor.telescope extra
 -- and disables editor.snacks_picker). This makes all default picker keymaps
 -- (<leader>ff, <leader><space>, <leader>fg, ...) route to Telescope instead of

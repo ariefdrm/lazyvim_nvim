@@ -9,10 +9,10 @@ return {
   { "catppuccin/nvim", name = "catppuccin", priority = 1000, lazy = false, enabled = false },
 
   -- rosepine
-  { "rose-pine/neovim", name = "rose-pine", priority = 1000, lazy = false, enabled = false },
+  { "rose-pine/neovim", name = "rose-pine", priority = 1000, lazy = false, enabled = true },
 
   -- tokyonight
-  { "folke/tokyonight.nvim", priority = 1000, enabled = true, opts = { transparent = false } },
+  { "folke/tokyonight.nvim", priority = 1000, enabled = false, opts = { transparent = false } },
 
   -- nightfox
   { "EdenEast/nightfox.nvim", priority = 1000, enabled = false }, -- lazy
@@ -110,5 +110,11 @@ return {
       require("transparent").clear_prefix("BufferLine")
       require("transparent").clear_prefix("telescope")
     end,
+  },
+
+  -- code diff for see changes ai agents make
+  {
+    "esmuellert/codediff.nvim",
+    cmd = "CodeDiff",
   },
 }

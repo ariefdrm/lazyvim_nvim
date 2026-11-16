@@ -94,7 +94,7 @@ return {
   },
 
   -- Configure LazyVim to load gruvbox
-  { "LazyVim/LazyVim", opts = { colorscheme = "tokyonight" } },
+  { "LazyVim/LazyVim", opts = { colorscheme = "rose-pine" } },
 
   -- neotree file explorer
   {
@@ -143,6 +143,7 @@ return {
 
   -- todo-comments
   { "folke/todo-comments.nvim", enabled = true }, -- disable
+
   -- formatter
   {
     "stevearc/conform.nvim",
